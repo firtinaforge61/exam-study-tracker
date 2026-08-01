@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Exam Tracker</string>
+
+    <string name="home_welcome_title">Welcome</string>
+    <string name="home_subtitle">Track your preparation progress for any exam, at your own pace.</string>
+    <string name="home_create_exam_button">Create Exam</string>
+    <string name="home_empty_state_title">No exam yet</string>
+    <string name="home_empty_state_description">You have not created an exam yet. Tap \"Create Exam\" to get started.</string>
+
+    <string name="create_exam_title">Create Exam</string>
+    <string name="create_exam_name_label">Exam name</string>
+    <string name="create_exam_date_label">Exam date</string>
+    <string name="create_exam_date_placeholder">Select a date (optional)</string>
+    <string name="create_exam_daily_goal_label">Daily question goal</string>
+    <string name="create_exam_net_rule_title">Net calculation rule</string>
+    <string name="create_exam_net_rule_4_1">4 wrong answers remove 1 correct answer</string>
+    <string name="create_exam_net_rule_3_1">3 wrong answers remove 1 correct answer</string>
+    <string name="create_exam_net_rule_none">Wrong answers do not affect correct answers</string>
+    <string name="create_exam_create_button">Create</string>
+
+    <string name="error_exam_name_blank">Exam name cannot be blank</string>
+    <string name="error_daily_goal_negative">Daily goal cannot be negative</string>
+
+    <string name="content_description_back">Back</string>
 </resources>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Sınav Takip</string>
+
+    <string name="home_welcome_title">Hoş Geldiniz</string>
+    <string name="home_subtitle">İstediğiniz herhangi bir sınava hazırlık sürecinizi kendi hızınızda takip edin.</string>
+    <string name="home_create_exam_button">Sınav Oluştur</string>
+    <string name="home_empty_state_title">Henüz sınav yok</string>
+    <string name="home_empty_state_description">Henüz bir sınav oluşturmadınız. Başlamak için \"Sınav Oluştur\" seçeneğine dokunun.</string>
+
+    <string name="create_exam_title">Sınav Oluştur</string>
+    <string name="create_exam_name_label">Sınav adı</string>
+    <string name="create_exam_date_label">Sınav tarihi</string>
+    <string name="create_exam_date_placeholder">Bir tarih seçin (opsiyonel)</string>
+    <string name="create_exam_daily_goal_label">Günlük soru hedefi</string>
+    <string name="create_exam_net_rule_title">Net hesaplama kuralı</string>
+    <string name="create_exam_net_rule_4_1">4 yanlış 1 doğruyu götürür</string>
+    <string name="create_exam_net_rule_3_1">3 yanlış 1 doğruyu götürür</string>
+    <string name="create_exam_net_rule_none">Yanlışlar doğruları etkilemez</string>
+    <string name="create_exam_create_button">Oluştur</string>
+
+    <string name="error_exam_name_blank">Sınav adı boş olamaz</string>
+    <string name="error_daily_goal_negative">Günlük hedef negatif olamaz</string>
+
+    <string name="content_description_back">Geri</string>
+</resources>
