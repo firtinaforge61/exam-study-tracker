@@ -32,7 +32,7 @@ class ExamViewModel(
     ) {
         viewModelScope.launch {
             val exam = ExamEntity(
-                name = examName,
+                name = examName.trim(),
                 examDateMillis = examDateMillis,
                 dailyQuestionGoal = dailyQuestionGoal,
                 netCalculationRule = netCalculationRule,

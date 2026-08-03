@@ -1,5 +1,6 @@
 package com.examtracker.app.screens
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -23,6 +24,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
@@ -36,12 +38,13 @@ import com.examtracker.app.ui.theme.ExamTrackerTheme
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
-import androidx.compose.runtime.remember
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(
     exams: List<ExamEntity>,
     onCreateExamClick: () -> Unit,
+    onExamClick: (ExamEntity) -> Unit,
     onDeleteExam: (ExamEntity) -> Unit
 ) {
     Scaffold(
@@ -92,6 +95,7 @@ fun HomeScreen(
                     items(items = exams, key = { it.id }) { exam ->
                         ExamCard(
                             exam = exam,
+                            onCardClick = { onExamClick(exam) },
                             onDeleteClick = { onDeleteExam(exam) }
                         )
                     }
@@ -104,12 +108,15 @@ fun HomeScreen(
 @Composable
 private fun ExamCard(
     exam: ExamEntity,
+    onCardClick: () -> Unit,
     onDeleteClick: () -> Unit
 ) {
     val dateFormatter = remember { SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()) }
 
     Card(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable(onClick = onCardClick),
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceVariant
         )
@@ -202,7 +209,7 @@ private fun EmptyExamCard() {
 @Composable
 private fun HomeScreenEmptyPreview() {
     ExamTrackerTheme {
-        HomeScreen(exams = emptyList(), onCreateExamClick = {}, onDeleteExam = {})
+        HomeScreen(exams = emptyList(), onCreateExamClick = {}, onExamClick = {}, onDeleteExam = {})
     }
 }
 
@@ -219,9 +226,18 @@ private fun HomeScreenWithExamsPreview() {
                     dailyQuestionGoal = 100,
                     netCalculationRule = NetCalculationRuleKeys.FOUR_WRONG_ONE_CORRECT,
                     createdAtMillis = System.currentTimeMillis()
+                ),
+                ExamEntity(
+                    id = 2L,
+                    name = "KPSS",
+                    examDateMillis = null,
+                    dailyQuestionGoal = 50,
+                    netCalculationRule = NetCalculationRuleKeys.NO_EFFECT,
+                    createdAtMillis = System.currentTimeMillis()
                 )
             ),
             onCreateExamClick = {},
+            onExamClick = {},
             onDeleteExam = {}
         )
     }

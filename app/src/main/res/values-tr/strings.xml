@@ -6,6 +6,10 @@
     <string name="home_create_exam_button">Sınav Oluştur</string>
     <string name="home_empty_state_title">Henüz sınav yok</string>
     <string name="home_empty_state_description">Henüz bir sınav oluşturmadınız. Başlamak için \"Sınav Oluştur\" seçeneğine dokunun.</string>
+    <string name="home_delete_exam_button">Sınavı sil</string>
+    <string name="home_exam_no_date">Tarih belirlenmedi</string>
+    <string name="home_exam_date_format">Tarih: %1$s</string>
+    <string name="home_exam_daily_goal_format">Günlük hedef: %1$d soru</string>
 
     <string name="create_exam_title">Sınav Oluştur</string>
     <string name="create_exam_name_label">Sınav adı</string>
@@ -22,8 +26,49 @@
     <string name="error_daily_goal_negative">Günlük hedef negatif olamaz</string>
 
     <string name="content_description_back">Geri</string>
-    <string name="home_delete_exam_button">Sınavı sil</string>
-    <string name="home_exam_no_date">Tarih belirlenmedi</string>
-    <string name="home_exam_date_format">Tarih: %1$s</string>
-    <string name="home_exam_daily_goal_format">Günlük hedef: %1$d soru</string>
+
+    <!-- Sınav Detayı -->
+    <string name="exam_detail_title">Sınav Detayı</string>
+    <string name="exam_detail_exam_not_found">Sınav bulunamadı</string>
+    <string name="exam_detail_date_format">Sınav tarihi: %1$s</string>
+    <string name="exam_detail_days_remaining_format">%1$d gün kaldı</string>
+    <string name="exam_detail_daily_goal_format">Günlük hedef: %1$d soru</string>
+    <string name="exam_detail_total_study_time_format">Toplam çalışma süresi: %1$d dakika</string>
+    <string name="exam_detail_total_solved_format">Toplam çözülen soru: %1$d</string>
+    <string name="exam_detail_total_net_format">Toplam net: %1$.2f</string>
+
+    <string name="exam_detail_subjects_title">Konular</string>
+    <string name="exam_detail_add_subject_button">Konu ekle</string>
+    <string name="exam_detail_delete_subject_button">Konuyu sil</string>
+    <string name="exam_detail_no_subjects">Henüz konu yok. Başlamak için bir konu ekleyin.</string>
+    <string name="exam_detail_subject_has_records_error">Bu konu silinemez çünkü çalışma kayıtları var.</string>
+
+    <string name="exam_detail_study_records_title">Çalışma Kayıtları</string>
+    <string name="exam_detail_add_study_record_button">Çalışma Kaydı Ekle</string>
+    <string name="exam_detail_no_study_records">Henüz çalışma kaydı yok.</string>
+    <string name="exam_detail_unknown_subject">Bilinmeyen konu</string>
+    <string name="exam_detail_delete_study_record_button">Çalışma kaydını sil</string>
+    <string name="exam_detail_record_duration_format">Süre: %1$d dakika</string>
+    <string name="exam_detail_record_correct_wrong_blank_format">Doğru: %1$d, Yanlış: %2$d, Boş: %3$d</string>
+    <string name="exam_detail_record_net_format">Net: %1$.2f</string>
+    <string name="exam_detail_record_date_format">Tarih: %1$s</string>
+
+    <string name="exam_detail_add_subject_dialog_title">Konu Ekle</string>
+    <string name="exam_detail_subject_name_label">Konu adı</string>
+    <string name="error_subject_name_blank">Konu adı boş olamaz</string>
+
+    <string name="action_add">Ekle</string>
+    <string name="action_cancel">Vazgeç</string>
+    <string name="action_save">Kaydet</string>
+
+    <!-- Çalışma Kaydı Ekle -->
+    <string name="add_study_record_title">Çalışma Kaydı Ekle</string>
+    <string name="add_study_record_no_subjects_message">Çalışma kaydı oluşturmadan önce bir konu ekleyin.</string>
+    <string name="add_study_record_subject_label">Konu</string>
+    <string name="add_study_record_duration_label">Süre (dakika)</string>
+    <string name="add_study_record_correct_label">Doğru sayısı</string>
+    <string name="add_study_record_wrong_label">Yanlış sayısı</string>
+    <string name="add_study_record_blank_label">Boş sayısı</string>
+    <string name="add_study_record_note_label">Not (opsiyonel)</string>
+    <string name="add_study_record_date_label">Tarih</string>
 </resources>

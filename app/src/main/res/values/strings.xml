@@ -6,6 +6,10 @@
     <string name="home_create_exam_button">Create Exam</string>
     <string name="home_empty_state_title">No exam yet</string>
     <string name="home_empty_state_description">You have not created an exam yet. Tap \"Create Exam\" to get started.</string>
+    <string name="home_delete_exam_button">Delete exam</string>
+    <string name="home_exam_no_date">No date set</string>
+    <string name="home_exam_date_format">Date: %1$s</string>
+    <string name="home_exam_daily_goal_format">Daily goal: %1$d questions</string>
 
     <string name="create_exam_title">Create Exam</string>
     <string name="create_exam_name_label">Exam name</string>
@@ -23,8 +27,48 @@
 
     <string name="content_description_back">Back</string>
 
-    <string name="home_delete_exam_button">Delete exam</string>
-    <string name="home_exam_no_date">No date set</string>
-    <string name="home_exam_date_format">Date: %1$s</string>
-    <string name="home_exam_daily_goal_format">Daily goal: %1$d questions</string>
+    <!-- Exam Detail -->
+    <string name="exam_detail_title">Exam Details</string>
+    <string name="exam_detail_exam_not_found">Exam not found</string>
+    <string name="exam_detail_date_format">Exam date: %1$s</string>
+    <string name="exam_detail_days_remaining_format">%1$d days remaining</string>
+    <string name="exam_detail_daily_goal_format">Daily goal: %1$d questions</string>
+    <string name="exam_detail_total_study_time_format">Total study time: %1$d minutes</string>
+    <string name="exam_detail_total_solved_format">Total solved questions: %1$d</string>
+    <string name="exam_detail_total_net_format">Total net: %1$.2f</string>
+
+    <string name="exam_detail_subjects_title">Subjects</string>
+    <string name="exam_detail_add_subject_button">Add subject</string>
+    <string name="exam_detail_delete_subject_button">Delete subject</string>
+    <string name="exam_detail_no_subjects">No subjects yet. Add one to get started.</string>
+    <string name="exam_detail_subject_has_records_error">This subject cannot be deleted because it has study records.</string>
+
+    <string name="exam_detail_study_records_title">Study Records</string>
+    <string name="exam_detail_add_study_record_button">Add Study Record</string>
+    <string name="exam_detail_no_study_records">No study records yet.</string>
+    <string name="exam_detail_unknown_subject">Unknown subject</string>
+    <string name="exam_detail_delete_study_record_button">Delete study record</string>
+    <string name="exam_detail_record_duration_format">Duration: %1$d minutes</string>
+    <string name="exam_detail_record_correct_wrong_blank_format">Correct: %1$d, Wrong: %2$d, Blank: %3$d</string>
+    <string name="exam_detail_record_net_format">Net: %1$.2f</string>
+    <string name="exam_detail_record_date_format">Date: %1$s</string>
+
+    <string name="exam_detail_add_subject_dialog_title">Add Subject</string>
+    <string name="exam_detail_subject_name_label">Subject name</string>
+    <string name="error_subject_name_blank">Subject name cannot be blank</string>
+
+    <string name="action_add">Add</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+
+    <!-- Add Study Record -->
+    <string name="add_study_record_title">Add Study Record</string>
+    <string name="add_study_record_no_subjects_message">Add a subject before creating a study record.</string>
+    <string name="add_study_record_subject_label">Subject</string>
+    <string name="add_study_record_duration_label">Duration (minutes)</string>
+    <string name="add_study_record_correct_label">Correct answers</string>
+    <string name="add_study_record_wrong_label">Wrong answers</string>
+    <string name="add_study_record_blank_label">Blank answers</string>
+    <string name="add_study_record_note_label">Note (optional)</string>
+    <string name="add_study_record_date_label">Date</string>
 </resources>
