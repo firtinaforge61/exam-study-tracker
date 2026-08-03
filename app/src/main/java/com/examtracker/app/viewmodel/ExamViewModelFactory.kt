@@ -13,6 +13,9 @@ class ExamViewModelFactory(
         if (modelClass.isAssignableFrom(ExamViewModel::class.java)) {
             return ExamViewModel(repository) as T
         }
-        throw IllegalArgumentException("Unknown ViewModel class: ${modelClass.name}")
+
+        throw IllegalArgumentException(
+            "Unknown ViewModel class: ${modelClass.name}"
+        )
     }
 }

@@ -38,6 +38,7 @@ class ExamViewModel(
                 netCalculationRule = netCalculationRule,
                 createdAtMillis = System.currentTimeMillis()
             )
+
             repository.insertExam(exam)
         }
     }
