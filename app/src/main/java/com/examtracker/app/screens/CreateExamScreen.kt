@@ -41,23 +41,29 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.examtracker.app.R
+import com.examtracker.app.data.local.NetCalculationRuleKeys
 import com.examtracker.app.ui.theme.ExamTrackerTheme
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Date
 import java.util.Locale
 
-private enum class NetCalculationRule {
-    FOUR_WRONG_ONE_CORRECT,
-    THREE_WRONG_ONE_CORRECT,
-    NO_EFFECT
+private enum class NetCalculationRuleOption(val key: String) {
+    FOUR_WRONG_ONE_CORRECT(NetCalculationRuleKeys.FOUR_WRONG_ONE_CORRECT),
+    THREE_WRONG_ONE_CORRECT(NetCalculationRuleKeys.THREE_WRONG_ONE_CORRECT),
+    NO_EFFECT(NetCalculationRuleKeys.NO_EFFECT)
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CreateExamScreen(
     onBackClick: () -> Unit,
-    onExamCreated: () -> Unit
+    onCreateExam: (
+        examName: String,
+        examDateMillis: Long?,
+        dailyQuestionGoal: Int,
+        netCalculationRule: String
+    ) -> Unit
 ) {
     val context = LocalContext.current
 
@@ -69,7 +75,7 @@ fun CreateExamScreen(
     var dailyGoalText by remember { mutableStateOf("") }
     var dailyGoalError by remember { mutableStateOf(false) }
 
-    var selectedRule by remember { mutableStateOf(NetCalculationRule.FOUR_WRONG_ONE_CORRECT) }
+    var selectedRule by remember { mutableStateOf(NetCalculationRuleOption.FOUR_WRONG_ONE_CORRECT) }
 
     val dateFormatter = remember { SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()) }
 
@@ -103,7 +109,12 @@ fun CreateExamScreen(
         dailyGoalError = !isGoalValid
 
         if (isNameValid && isGoalValid) {
-            onExamCreated()
+            onCreateExam(
+                examName.trim(),
+                selectedDateMillis,
+                goalValue ?: 0,
+                selectedRule.key
+            )
         }
     }
 
@@ -209,18 +220,18 @@ fun CreateExamScreen(
 
             NetRuleOption(
                 label = stringResource(id = R.string.create_exam_net_rule_4_1),
-                selected = selectedRule == NetCalculationRule.FOUR_WRONG_ONE_CORRECT,
-                onSelect = { selectedRule = NetCalculationRule.FOUR_WRONG_ONE_CORRECT }
+                selected = selectedRule == NetCalculationRuleOption.FOUR_WRONG_ONE_CORRECT,
+                onSelect = { selectedRule = NetCalculationRuleOption.FOUR_WRONG_ONE_CORRECT }
             )
             NetRuleOption(
                 label = stringResource(id = R.string.create_exam_net_rule_3_1),
-                selected = selectedRule == NetCalculationRule.THREE_WRONG_ONE_CORRECT,
-                onSelect = { selectedRule = NetCalculationRule.THREE_WRONG_ONE_CORRECT }
+                selected = selectedRule == NetCalculationRuleOption.THREE_WRONG_ONE_CORRECT,
+                onSelect = { selectedRule = NetCalculationRuleOption.THREE_WRONG_ONE_CORRECT }
             )
             NetRuleOption(
                 label = stringResource(id = R.string.create_exam_net_rule_none),
-                selected = selectedRule == NetCalculationRule.NO_EFFECT,
-                onSelect = { selectedRule = NetCalculationRule.NO_EFFECT }
+                selected = selectedRule == NetCalculationRuleOption.NO_EFFECT,
+                onSelect = { selectedRule = NetCalculationRuleOption.NO_EFFECT }
             )
 
             Spacer(modifier = Modifier.height(32.dp))
@@ -257,6 +268,6 @@ private fun NetRuleOption(
 @Composable
 private fun CreateExamScreenPreview() {
     ExamTrackerTheme {
-        CreateExamScreen(onBackClick = {}, onExamCreated = {})
+        CreateExamScreen(onBackClick = {}, onCreateExam = { _, _, _, _ -> })
     }
 }

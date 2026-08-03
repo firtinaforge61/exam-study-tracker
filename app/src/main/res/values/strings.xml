@@ -22,4 +22,9 @@
     <string name="error_daily_goal_negative">Daily goal cannot be negative</string>
 
     <string name="content_description_back">Back</string>
+
+    <string name="home_delete_exam_button">Delete exam</string>
+    <string name="home_exam_no_date">No date set</string>
+    <string name="home_exam_date_format">Date: %1$s</string>
+    <string name="home_exam_daily_goal_format">Daily goal: %1$d questions</string>
 </resources>

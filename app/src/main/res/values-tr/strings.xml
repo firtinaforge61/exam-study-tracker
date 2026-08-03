@@ -22,4 +22,8 @@
     <string name="error_daily_goal_negative">Günlük hedef negatif olamaz</string>
 
     <string name="content_description_back">Geri</string>
+    <string name="home_delete_exam_button">Sınavı sil</string>
+    <string name="home_exam_no_date">Tarih belirlenmedi</string>
+    <string name="home_exam_date_format">Tarih: %1$s</string>
+    <string name="home_exam_daily_goal_format">Günlük hedef: %1$d soru</string>
 </resources>
