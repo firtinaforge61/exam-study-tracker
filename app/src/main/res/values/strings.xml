@@ -71,4 +71,133 @@
     <string name="add_study_record_blank_label">Blank answers</string>
     <string name="add_study_record_note_label">Note (optional)</string>
     <string name="add_study_record_date_label">Date</string>
+    <!-- Timer Mode Selection -->
+    <string name="timer_mode_selection_title">Start Study Session</string>
+    <string name="timer_mode_selection_subject_label">Select a subject</string>
+    <string name="timer_mode_selection_no_subjects_message">Add a subject before starting a study session.</string>
+    <string name="timer_mode_selection_mode_label">Select a mode</string>
+    <string name="timer_mode_pomodoro_25_5">Pomodoro 25 / 5</string>
+    <string name="timer_mode_pomodoro_50_10">Pomodoro 50 / 10</string>
+    <string name="timer_mode_custom_pomodoro">Custom Pomodoro</string>
+    <string name="timer_mode_custom_focus_label">Focus minutes</string>
+    <string name="timer_mode_custom_break_label">Break minutes</string>
+    <string name="timer_mode_custom_cycles_label">Number of cycles</string>
+    <string name="timer_mode_stopwatch">Stopwatch</string>
+    <string name="timer_mode_countdown">Countdown Timer</string>
+    <string name="timer_mode_countdown_minutes_label">Countdown minutes</string>
+    <string name="timer_mode_selection_start_button">Start Session</string>
+
+    <!-- Timer Screen -->
+    <string name="timer_screen_title">Study Session</string>
+    <string name="timer_screen_phase_focus">Focus</string>
+    <string name="timer_screen_phase_break">Break</string>
+    <string name="timer_screen_phase_finished">Session Finished</string>
+    <string name="timer_screen_phase_idle">Ready to start</string>
+    <string name="timer_screen_completed_pomodoros_label">Completed Pomodoros</string>
+    <string name="timer_screen_current_cycle_label">Current Cycle</string>
+    <string name="timer_screen_cycle_format">%1$d / %2$d</string>
+    <string name="timer_screen_todays_focus_label">Today\'s Focus</string>
+    <string name="timer_screen_minutes_format">%1$d min</string>
+    <string name="timer_screen_start_button">Start</string>
+    <string name="timer_screen_pause_button">Pause</string>
+    <string name="timer_screen_resume_button">Resume</string>
+    <string name="timer_screen_finish_button">Finish</string>
+    <string name="timer_screen_skip_break_button">Skip Break</string>
+    <string name="timer_screen_cancel_button">Cancel</string>
+
+    <!-- Session Completion Dialog -->
+    <string name="session_completion_dialog_title">Study Session Complete</string>
+    <string name="session_completion_dialog_focus_summary_format">You focused for %1$d minutes. Log your results:</string>
+    <string name="session_completion_correct_label">Correct answers</string>
+    <string name="session_completion_wrong_label">Wrong answers</string>
+    <string name="session_completion_blank_label">Blank answers</string>
+    <string name="session_completion_note_label">Note (optional)</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_today_study_title">Today\'s Study</string>
+    <string name="dashboard_today_study_minutes_format">%1$d minutes</string>
+    <string name="dashboard_today_goal_percentage_format">%1$.0f%% of daily goal</string>
+
+    <string name="dashboard_current_streak_title">Current Streak</string>
+    <string name="dashboard_current_streak_days_format">%1$d days</string>
+
+    <string name="dashboard_weekly_minutes_title">This Week</string>
+    <string name="dashboard_weekly_minutes_format">%1$d minutes</string>
+
+    <string name="dashboard_monthly_minutes_title">This Month</string>
+    <string name="dashboard_monthly_minutes_format">%1$d minutes</string>
+
+    <string name="dashboard_quick_resume_title">Continue Last Session</string>
+    <string name="dashboard_continue_last_session_button">Resume</string>
+    <string name="dashboard_no_recent_session">No recent sessions yet.</string>
+    <string name="dashboard_quick_resume_subject_format">%1$s • %2$s</string>
+
+    <string name="dashboard_recent_records_title">Recent Study Records</string>
+    <string name="dashboard_no_recent_records">No study records yet.</string>
+
+    <string name="dashboard_upcoming_exams_title">Upcoming Exams</string>
+    <string name="dashboard_no_upcoming_exams">No upcoming exams with a set date.</string>
+
+    <string name="dashboard_recent_exams_title">Recent Exams</string>
+    <string name="dashboard_all_exams_title">All Exams</string>
+
+    <string name="exam_detail_start_study_session_button">Start Study Session</string>
+    <string name="exam_detail_history_button">History</string>
+
+    <!-- Oturum Geçmişi -->
+    <string name="session_history_title">Oturum Geçmişi</string>
+    <string name="session_history_search_label">Notlarda ara</string>
+    <string name="session_history_filter_all">Tümü</string>
+    <string name="session_history_filter_today">Bugün</string>
+    <string name="session_history_filter_week">Bu Hafta</string>
+    <string name="session_history_filter_month">Bu Ay</string>
+    <string name="session_history_all_subjects">Tüm Konular</string>
+    <string name="session_history_no_results">Mevcut filtrelerle eşleşen çalışma kaydı yok.</string>
+    <string name="session_history_edit_button">Çalışma kaydını düzenle</string>
+
+    <!-- Edit Study Record -->
+    <string name="edit_study_record_title">Edit Study Record</string>
+    <string name="edit_study_record_not_found">Study record not found</string>
+
+    <!-- Subject Statistics -->
+    <string name="subject_statistics_title">Subject Statistics</string>
+    <string name="subject_statistics_no_data">No study data available for this subject yet.</string>
+    <string name="subject_statistics_never_studied">Never studied</string>
+
+    <string name="subject_statistics_total_minutes_title">Total Minutes</string>
+    <string name="subject_statistics_total_minutes_format">%1$d minutes</string>
+
+    <string name="subject_statistics_total_questions_title">Total Questions</string>
+    <string name="subject_statistics_total_questions_format">%1$d questions</string>
+
+    <string name="subject_statistics_average_net_title">Average Net</string>
+    <string name="subject_statistics_average_net_format">%1$.2f</string>
+
+    <string name="subject_statistics_average_study_time_title">Average Study Time</string>
+    <string name="subject_statistics_average_study_time_format">%1$.1f minutes</string>
+
+    <string name="subject_statistics_study_frequency_title">Study Frequency</string>
+    <string name="subject_statistics_study_frequency_format">%1$.1f sessions per week</string>
+
+    <string name="subject_statistics_last_study_date_title">Last Study Date</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_theme_section_title">Theme</string>
+    <string name="settings_theme_system">Use system setting</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+
+    <string name="settings_background_section_title">App background</string>
+    <string name="settings_background_default">Default</string>
+    <string name="settings_background_night_blue">Night blue</string>
+    <string name="settings_background_light_paper">Light paper</string>
+    <string name="settings_background_dark_grid">Dark grid</string>
+
+    <string name="settings_theme_night_blue">Night blue</string>
+    <string name="settings_theme_light_paper">Light paper</string>
+    <string name="settings_theme_dark_grid">Dark grid</string>
+    <string name="settings_theme_amoled">AMOLED black</string>
+    <string name="settings_theme_forest">Forest green</string>
+    <string name="settings_theme_sunset">Sunset</string>
 </resources>

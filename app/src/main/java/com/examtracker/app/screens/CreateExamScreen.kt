@@ -47,7 +47,7 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Date
 import java.util.Locale
-
+import com.examtracker.app.settings.AppTheme
 private enum class NetCalculationRuleOption(val key: String) {
     FOUR_WRONG_ONE_CORRECT(NetCalculationRuleKeys.FOUR_WRONG_ONE_CORRECT),
     THREE_WRONG_ONE_CORRECT(NetCalculationRuleKeys.THREE_WRONG_ONE_CORRECT),
@@ -267,7 +267,8 @@ private fun NetRuleOption(
 @Preview(showBackground = true)
 @Composable
 private fun CreateExamScreenPreview() {
-    ExamTrackerTheme {
+    ExamTrackerTheme (
+        appTheme = AppTheme.LIGHT    ) {
         CreateExamScreen(onBackClick = {}, onCreateExam = { _, _, _, _ -> })
     }
 }

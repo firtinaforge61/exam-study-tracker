@@ -7,13 +7,38 @@ import kotlinx.coroutines.flow.Flow
 class SubjectRepository(
     private val subjectDao: SubjectDao
 ) {
-    suspend fun insertSubject(subject: SubjectEntity): Long = subjectDao.insertSubject(subject)
 
-    fun getSubjectsForExam(examId: Long): Flow<List<SubjectEntity>> =
-        subjectDao.getSubjectsForExam(examId)
+    suspend fun insertSubject(
+        subject: SubjectEntity
+    ): Long {
+        return subjectDao.insertSubject(subject)
+    }
 
-    suspend fun deleteSubject(subject: SubjectEntity) = subjectDao.deleteSubject(subject)
+    fun getSubjectsForExam(
+        examId: Long
+    ): Flow<List<SubjectEntity>> {
+        return subjectDao.getSubjectsForExam(examId)
+    }
 
-    suspend fun getStudyRecordCountForSubject(subjectId: Long): Int =
-        subjectDao.getStudyRecordCountForSubject(subjectId)
+    fun getAllSubjects(): Flow<List<SubjectEntity>> {
+        return subjectDao.getAllSubjects()
+    }
+
+    fun getSubjectById(
+        id: Long
+    ): Flow<SubjectEntity?> {
+        return subjectDao.getSubjectById(id)
+    }
+
+    suspend fun deleteSubject(
+        subject: SubjectEntity
+    ) {
+        subjectDao.deleteSubject(subject)
+    }
+
+    suspend fun getStudyRecordCountForSubject(
+        subjectId: Long
+    ): Int {
+        return subjectDao.getStudyRecordCountForSubject(subjectId)
+    }
 }

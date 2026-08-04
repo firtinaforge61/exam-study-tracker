@@ -14,6 +14,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.examtracker.app.R
 import com.examtracker.app.ui.theme.ExamTrackerTheme
+import com.examtracker.app.settings.AppTheme
 
 @Composable
 fun AddSubjectDialog(
@@ -69,7 +70,11 @@ fun AddSubjectDialog(
 @Preview(showBackground = true)
 @Composable
 private fun AddSubjectDialogPreview() {
-    ExamTrackerTheme {
-        AddSubjectDialog(onDismiss = {}, onConfirm = {})
-    }
-}
+    ExamTrackerTheme(
+        appTheme = AppTheme.LIGHT
+    ) {
+        AddSubjectDialog(
+            onDismiss = {},
+            onConfirm = {}
+        )
+    }}

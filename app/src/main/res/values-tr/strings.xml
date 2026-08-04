@@ -71,4 +71,133 @@
     <string name="add_study_record_blank_label">Boş sayısı</string>
     <string name="add_study_record_note_label">Not (opsiyonel)</string>
     <string name="add_study_record_date_label">Tarih</string>
+    <!-- Zamanlayıcı Modu Seçimi -->
+    <string name="timer_mode_selection_title">Çalışma Oturumu Başlat</string>
+    <string name="timer_mode_selection_subject_label">Bir konu seçin</string>
+    <string name="timer_mode_selection_no_subjects_message">Çalışma oturumu başlatmadan önce bir konu ekleyin.</string>
+    <string name="timer_mode_selection_mode_label">Bir mod seçin</string>
+    <string name="timer_mode_pomodoro_25_5">Pomodoro 25 / 5</string>
+    <string name="timer_mode_pomodoro_50_10">Pomodoro 50 / 10</string>
+    <string name="timer_mode_custom_pomodoro">Özel Pomodoro</string>
+    <string name="timer_mode_custom_focus_label">Odak dakikası</string>
+    <string name="timer_mode_custom_break_label">Mola dakikası</string>
+    <string name="timer_mode_custom_cycles_label">Döngü sayısı</string>
+    <string name="timer_mode_stopwatch">Kronometre</string>
+    <string name="timer_mode_countdown">Geri Sayım Zamanlayıcısı</string>
+    <string name="timer_mode_countdown_minutes_label">Geri sayım dakikası</string>
+    <string name="timer_mode_selection_start_button">Oturumu Başlat</string>
+
+    <!-- Zamanlayıcı Ekranı -->
+    <string name="timer_screen_title">Çalışma Oturumu</string>
+    <string name="timer_screen_phase_focus">Odaklanma</string>
+    <string name="timer_screen_phase_break">Mola</string>
+    <string name="timer_screen_phase_finished">Oturum Tamamlandı</string>
+    <string name="timer_screen_phase_idle">Başlamaya hazır</string>
+    <string name="timer_screen_completed_pomodoros_label">Tamamlanan Pomodoro</string>
+    <string name="timer_screen_current_cycle_label">Mevcut Döngü</string>
+    <string name="timer_screen_cycle_format">%1$d / %2$d</string>
+    <string name="timer_screen_todays_focus_label">Bugünkü Odaklanma</string>
+    <string name="timer_screen_minutes_format">%1$d dk</string>
+    <string name="timer_screen_start_button">Başlat</string>
+    <string name="timer_screen_pause_button">Duraklat</string>
+    <string name="timer_screen_resume_button">Devam Et</string>
+    <string name="timer_screen_finish_button">Bitir</string>
+    <string name="timer_screen_skip_break_button">Molayı Atla</string>
+    <string name="timer_screen_cancel_button">İptal</string>
+
+    <!-- Oturum Tamamlama Diyaloğu -->
+    <string name="session_completion_dialog_title">Çalışma Oturumu Tamamlandı</string>
+    <string name="session_completion_dialog_focus_summary_format">%1$d dakika odaklandınız. Sonuçlarınızı kaydedin:</string>
+    <string name="session_completion_correct_label">Doğru sayısı</string>
+    <string name="session_completion_wrong_label">Yanlış sayısı</string>
+    <string name="session_completion_blank_label">Boş sayısı</string>
+    <string name="session_completion_note_label">Not (opsiyonel)</string>
+
+    <!-- Ana Panel -->
+    <string name="dashboard_today_study_title">Bugünkü Çalışma</string>
+    <string name="dashboard_today_study_minutes_format">%1$d dakika</string>
+    <string name="dashboard_today_goal_percentage_format">Günlük hedefin %% %1$.0f\'i</string>
+
+    <string name="dashboard_current_streak_title">Mevcut Seri</string>
+    <string name="dashboard_current_streak_days_format">%1$d gün</string>
+
+    <string name="dashboard_weekly_minutes_title">Bu Hafta</string>
+    <string name="dashboard_weekly_minutes_format">%1$d dakika</string>
+
+    <string name="dashboard_monthly_minutes_title">Bu Ay</string>
+    <string name="dashboard_monthly_minutes_format">%1$d dakika</string>
+
+    <string name="dashboard_quick_resume_title">Son Oturuma Devam Et</string>
+    <string name="dashboard_continue_last_session_button">Devam Et</string>
+    <string name="dashboard_no_recent_session">Henüz yakın tarihli bir oturum yok.</string>
+    <string name="dashboard_quick_resume_subject_format">%1$s • %2$s</string>
+
+    <string name="dashboard_recent_records_title">Son Çalışma Kayıtları</string>
+    <string name="dashboard_no_recent_records">Henüz çalışma kaydı yok.</string>
+
+    <string name="dashboard_upcoming_exams_title">Yaklaşan Sınavlar</string>
+    <string name="dashboard_no_upcoming_exams">Tarihi belirlenmiş yaklaşan sınav yok.</string>
+
+    <string name="dashboard_recent_exams_title">Son Sınavlar</string>
+    <string name="dashboard_all_exams_title">Tüm Sınavlar</string>
+
+    <string name="exam_detail_start_study_session_button">Çalışma Oturumu Başlat</string>
+    <string name="exam_detail_history_button">Geçmiş</string>
+
+    <!-- Oturum Geçmişi -->
+    <string name="session_history_title">Oturum Geçmişi</string>
+    <string name="session_history_search_label">Notlarda ara</string>
+    <string name="session_history_filter_all">Tümü</string>
+    <string name="session_history_filter_today">Bugün</string>
+    <string name="session_history_filter_week">Bu Hafta</string>
+    <string name="session_history_filter_month">Bu Ay</string>
+    <string name="session_history_all_subjects">Tüm Konular</string>
+    <string name="session_history_no_results">Mevcut filtrelerle eşleşen çalışma kaydı yok.</string>
+    <string name="session_history_edit_button">Çalışma kaydını düzenle</string>
+
+    <!-- Çalışma Kaydını Düzenle -->
+    <string name="edit_study_record_title">Çalışma Kaydını Düzenle</string>
+    <string name="edit_study_record_not_found">Çalışma kaydı bulunamadı</string>
+
+    <!-- Konu İstatistikleri -->
+    <string name="subject_statistics_title">Konu İstatistikleri</string>
+    <string name="subject_statistics_no_data">Bu konu için henüz çalışma verisi yok.</string>
+    <string name="subject_statistics_never_studied">Hiç çalışılmadı</string>
+
+    <string name="subject_statistics_total_minutes_title">Toplam Dakika</string>
+    <string name="subject_statistics_total_minutes_format">%1$d dakika</string>
+
+    <string name="subject_statistics_total_questions_title">Toplam Soru</string>
+    <string name="subject_statistics_total_questions_format">%1$d soru</string>
+
+    <string name="subject_statistics_average_net_title">Ortalama Net</string>
+    <string name="subject_statistics_average_net_format">%1$.2f</string>
+
+    <string name="subject_statistics_average_study_time_title">Ortalama Çalışma Süresi</string>
+    <string name="subject_statistics_average_study_time_format">%1$.1f dakika</string>
+
+    <string name="subject_statistics_study_frequency_title">Çalışma Sıklığı</string>
+    <string name="subject_statistics_study_frequency_format">Haftada %1$.1f oturum</string>
+
+    <string name="subject_statistics_last_study_date_title">Son Çalışma Tarihi</string>
+
+    <!-- Ayarlar -->
+    <string name="settings_title">Ayarlar</string>
+    <string name="settings_theme_section_title">Tema</string>
+    <string name="settings_theme_system">Sistem ayarını kullan</string>
+    <string name="settings_theme_light">Açık</string>
+    <string name="settings_theme_dark">Koyu</string>
+
+    <string name="settings_background_section_title">Uygulama arka planı</string>
+    <string name="settings_background_default">Varsayılan</string>
+    <string name="settings_background_night_blue">Gece mavisi</string>
+    <string name="settings_background_light_paper">Açık kâğıt</string>
+    <string name="settings_background_dark_grid">Koyu ızgara</string>
+
+    <string name="settings_theme_night_blue">Gece mavisi</string>
+    <string name="settings_theme_light_paper">Açık kâğıt</string>
+    <string name="settings_theme_dark_grid">Koyu ızgara</string>
+    <string name="settings_theme_amoled">AMOLED siyah</string>
+    <string name="settings_theme_forest">Orman yeşili</string>
+    <string name="settings_theme_sunset">Gün batımı</string>
 </resources>

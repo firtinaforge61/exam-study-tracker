@@ -12,12 +12,31 @@ interface SubjectDao {
     @Insert
     suspend fun insertSubject(subject: SubjectEntity): Long
 
-    @Query("SELECT * FROM subjects WHERE examId = :examId ORDER BY createdAtMillis ASC")
-    fun getSubjectsForExam(examId: Long): Flow<List<SubjectEntity>>
+    @Query(
+        "SELECT * FROM subjects " +
+                "WHERE examId = :examId " +
+                "ORDER BY createdAtMillis ASC"
+    )
+    fun getSubjectsForExam(
+        examId: Long
+    ): Flow<List<SubjectEntity>>
+
+    @Query("SELECT * FROM subjects ORDER BY name ASC")
+    fun getAllSubjects(): Flow<List<SubjectEntity>>
+
+    @Query("SELECT * FROM subjects WHERE id = :id")
+    fun getSubjectById(
+        id: Long
+    ): Flow<SubjectEntity?>
 
     @Delete
     suspend fun deleteSubject(subject: SubjectEntity)
 
-    @Query("SELECT COUNT(*) FROM study_records WHERE subjectId = :subjectId")
-    suspend fun getStudyRecordCountForSubject(subjectId: Long): Int
+    @Query(
+        "SELECT COUNT(*) FROM study_records " +
+                "WHERE subjectId = :subjectId"
+    )
+    suspend fun getStudyRecordCountForSubject(
+        subjectId: Long
+    ): Int
 }
