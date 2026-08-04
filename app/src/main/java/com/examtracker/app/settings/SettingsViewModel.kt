@@ -22,12 +22,31 @@ class SettingsViewModel(
             initialValue = AppTheme.SYSTEM
         )
 
+    val customBackgroundUri: StateFlow<String?> =
+        repository.customBackgroundUri.stateIn(
+            scope = viewModelScope,
+            started = SharingStarted.WhileSubscribed(
+                SETTINGS_STATE_TIMEOUT_MILLIS
+            ),
+            initialValue = null
+        )
+
     fun setAppTheme(
         appTheme: AppTheme
     ) {
         viewModelScope.launch {
             repository.setAppTheme(
                 appTheme
+            )
+        }
+    }
+
+    fun setCustomBackgroundUri(
+        uri: String?
+    ) {
+        viewModelScope.launch {
+            repository.setCustomBackgroundUri(
+                uri
             )
         }
     }

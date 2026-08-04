@@ -12,11 +12,22 @@ class SettingsRepository(
             AppTheme.fromName(value)
         }
 
+    val customBackgroundUri: Flow<String?> =
+        preferences.customBackgroundUri
+
     suspend fun setAppTheme(
         appTheme: AppTheme
     ) {
         preferences.setAppTheme(
             appTheme.name
+        )
+    }
+
+    suspend fun setCustomBackgroundUri(
+        uri: String?
+    ) {
+        preferences.setCustomBackgroundUri(
+            uri
         )
     }
 }

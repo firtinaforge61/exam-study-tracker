@@ -200,4 +200,12 @@
     <string name="settings_theme_amoled">AMOLED black</string>
     <string name="settings_theme_forest">Forest green</string>
     <string name="settings_theme_sunset">Sunset</string>
+
+    <!-- Custom Background -->
+    <string name="settings_custom_background_title">Custom background</string>
+    <string name="settings_custom_background_description">Choose a photo from your device to use behind the application content.</string>
+    <string name="settings_no_custom_background">No custom background selected.</string>
+    <string name="settings_custom_background_selected">Custom background selected</string>
+    <string name="settings_choose_background_photo">Choose photo from gallery</string>
+    <string name="settings_remove_background_photo">Remove background photo</string>
 </resources>

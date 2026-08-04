@@ -200,4 +200,12 @@
     <string name="settings_theme_amoled">AMOLED siyah</string>
     <string name="settings_theme_forest">Orman yeşili</string>
     <string name="settings_theme_sunset">Gün batımı</string>
+
+    <!-- Özel Arka Plan -->
+    <string name="settings_custom_background_title">Özel arka plan</string>
+    <string name="settings_custom_background_description">Uygulama içeriğinin arkasında kullanmak için cihazınızdan bir fotoğraf seçin.</string>
+    <string name="settings_no_custom_background">Özel arka plan seçilmedi.</string>
+    <string name="settings_custom_background_selected">Özel arka plan seçildi</string>
+    <string name="settings_choose_background_photo">Galeriden fotoğraf seç</string>
+    <string name="settings_remove_background_photo">Arka plan fotoğrafını kaldır</string>
 </resources>

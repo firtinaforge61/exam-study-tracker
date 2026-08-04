@@ -54,7 +54,9 @@ class MainActivity : ComponentActivity() {
                 appTheme = appTheme,
                 systemDarkTheme = systemDarkTheme
             ) {
-                AppNavigation()
+                AppRoot(
+                    settingsViewModel = settingsViewModel
+                )
             }
         }
     }
